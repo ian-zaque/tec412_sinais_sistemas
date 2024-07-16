@@ -10,7 +10,7 @@ x = ((1/3).^-n) .* u(-n-1);
 % h[n] = u[n-1]
 h = u(n-1);
 
-% Plotar as funções presentes
+% Plotar as funções `(1/3)^-n)`, `(u(-n))`, `(u(-n -1))`
 figure;
 
 x_1 = ((1/3).^-n);
@@ -56,7 +56,7 @@ end
 % Definir o novo intervalo para a sequência convoluída
 n_conv = (-5) + (0:len_conv-1);
 
-% Plotar os sinais e o resultado da convolução
+% Plotar o sinal de entrada, a resposta de impulso e o resultado da convolução
 figure;
 subplot(3, 1, 1);
 stem(-5:5, x);
